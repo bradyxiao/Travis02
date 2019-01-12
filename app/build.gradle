@@ -18,8 +18,10 @@ android {
         }
         debug{
             testCoverageEnabled = true
+            def testAPPID2 = System.getenv("APPID2")
+            println(testAPPID2)
             buildConfigField("String", "APPID", "\"${APPID}\"")
-            buildConfigField("String", "APPID2", "\"${System.env.APPID}\"")
+            buildConfigField("String", "APPID2", "\"${System.env.APPID2}\"")
         }
     }
 }
