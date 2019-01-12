@@ -26,6 +26,6 @@ public class ExampleInstrumentedTest {
 
     @Test
     public void testAppid(){
-        assertEquals(BuildConfig.APPID, BuildConfig.APPID2);
+        assertEquals("24589", BuildConfig.APPID2);
     }
 }
