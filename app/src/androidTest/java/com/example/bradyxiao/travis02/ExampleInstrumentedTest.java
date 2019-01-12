@@ -23,4 +23,9 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.example.bradyxiao.travis02", appContext.getPackageName());
     }
+
+    @Test
+    public void testAppid(){
+        assertEquals(BuildConfig.APPID, BuildConfig.APPID2);
+    }
 }
